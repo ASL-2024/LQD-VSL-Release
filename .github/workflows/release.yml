@@ -27,8 +27,8 @@ jobs:
       - name: Push to Github Release
         uses: ncipollo/release-action@v1
         with:
-          tag: v4.2.6
-          name: v4.2.6
+          tag: v4.3.1
+          name: v4.3.1
           artifacts: |
             ASL-BLE-LQD2024.apk
             update-changelog.json
