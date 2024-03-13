@@ -14,7 +14,7 @@ jobs:
       - uses: actions/checkout@v3
       # Set Current Date As Env Variable
       - name: Set current date as env variable
-        run: echo "date_today=2024-03-10" >> $GITHUB_ENV
+        run: echo "date_today=2024-03-13" >> $GITHUB_ENV
       # Set Repository Name As Env Variable
       - name: Set repository name as env variable
         run: echo "repository_name=$(echo '\VSL-2024/LQD-VSL' | awk -F '/' '{print $2}')" >> $GITHUB_ENV
@@ -27,8 +27,8 @@ jobs:
       - name: Push to Github Release
         uses: ncipollo/release-action@v1
         with:
-          tag: v5.0.0
-          name: v5.0.0
+          tag: v5.1.0
+          name: v5.1.0
           artifacts: |
             VSL-BLE-LQD2024.apk
             update-changelog.json
